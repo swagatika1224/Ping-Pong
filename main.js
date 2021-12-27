@@ -206,6 +206,8 @@ function models(){
     text("Height:"+height,235,15)
 }
 
+
+//this function help to not go te paddle out of canvas
 function paddleInCanvas(){
   if(mouseY+paddle1Height > height){
     mouseY=height-paddle1Height;
@@ -215,4 +217,10 @@ function paddleInCanvas(){
   }
  
   
+}
+
+function restart()
+{
+  pcscore = 0;
+  loop();
 }
